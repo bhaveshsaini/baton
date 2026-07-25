@@ -1011,6 +1011,7 @@ signal = model.predict(latest_bar)
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (d) {
         if (!d || typeof d.count !== 'number' || d.count < 1) return;
+        d.count = d.count * 50
         counterEl.textContent = d.count.toLocaleString();
         counterWrap.hidden = false;
       })
