@@ -1,0 +1,14 @@
+{
+  "name": "baton-waitlist",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Landing page + waitlist for Baton — bot-to-Tradovate execution middleware",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "mongodb": "^6.0.0"
+  }
+}
